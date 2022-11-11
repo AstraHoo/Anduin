@@ -1,0 +1,3 @@
+1、查看helm启动的pod情况 kubectl describe statefulset/名称 
+2、查看pod配置文件信息  kubectl get pod rangeradmin-0 -o yaml
+3、查看pod网络情况kubectl get pod -o wide
