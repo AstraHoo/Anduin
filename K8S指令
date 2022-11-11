@@ -1,3 +1,4 @@
 1、查看helm启动的pod情况 kubectl describe statefulset/名称 
 2、查看pod配置文件信息  kubectl get pod rangeradmin-0 -o yaml
-3、查看pod网络情况kubectl get pod -o wide
+3、列出当前命名空间中的所有pod并提供详细信息 kubectl get pod -o wide
+4、向pod中拷贝文件 kubectl cp defender-0.0.1-hbp4.0-k8s-helm cloudmanager-serim-0:/usr/lib/cloudmanager/components/serim/packages
