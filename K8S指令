@@ -2,3 +2,4 @@
 2、查看pod配置文件信息  kubectl get pod rangeradmin-0 -o yaml
 3、列出当前命名空间中的所有pod并提供详细信息 kubectl get pod -o wide
 4、向pod中拷贝文件 kubectl cp defender-0.0.1-hbp4.0-k8s-helm cloudmanager-serim-0:/usr/lib/cloudmanager/components/serim/packages
+5、删除所有UnexpectedAdmissionError状态的pod：kubectl get pods -A | grep UnexpectedAdmissionError | awk '{printf("kubectl delete pod %s -n %s\n", $2, $1)}' | /bin/bash 
