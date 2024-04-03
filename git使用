@@ -1,0 +1,9 @@
+1、配置ssh免密登录
+  （1）在待使用linux服务器，生成秘钥  ssh-keygen -t rsa -C "hubinhua@company.com.cn" -f ~/.ssh/id_hbh
+  （2）在gitlab，复制公钥，生成免密key
+  （3）配置ssh使用用户 vim ~/.ssh/config
+  Host sys-gitlab.company.com.cn
+  User hubinhua
+  Port 22
+  IdentityFile ~/.ssh/id_hbh
+  （4）验证账户，通过ssh -T git@sys-gitlab.company.com.cn
