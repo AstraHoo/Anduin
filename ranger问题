@@ -1,0 +1,3 @@
+1、Ranger 用户密码加密方式
+		UserMgr userMgr=new UserMgr();
+		String md5EncryptedPassword = userMgr.encryptWithOlderAlgo(userLoginId, currentPassword);
