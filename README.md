@@ -1,2 +1,2 @@
 # Anduin
-hu bin hub's world
+Daily Summary
