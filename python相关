@@ -1,0 +1,5 @@
+1、虚拟环境使用miniforge，开发环境使用vscode
+2、使用pyspark时，如果在windows本地运行，需要配置python环境变量，确保PySpark知道Python解释器的位置，如下，
+import os
+# 指定Python路径（替换为你的实际路径）
+os.environ['PYSPARK_PYTHON'] = 'python'  
